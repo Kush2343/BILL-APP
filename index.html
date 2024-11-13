@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Include jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- Include jsPDF AutoTable Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.20/jspdf.plugin.autotable.min.js"></script>
+
+  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Billing App</title>
+</head>
+<body>
+
+  <h1>Billing App</h1>
+  <form id="billing-form">
+    <table id="billing-table">
+      <thead>
+        <tr>
+          <th>Label</th>
+          <th>Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Initial rows will be added here by JavaScript -->
+      </tbody>
+    </table>
+
+    <button type="button" id="add-row-btn">Add More Rows</button>
+    <br><br>
+    <button type="submit">Submit and Generate Bill</button>
+  </form>
+
+</body>
+</html>
